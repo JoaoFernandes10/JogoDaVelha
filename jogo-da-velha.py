@@ -1,4 +1,4 @@
-#!/data/user/0/org.qpython.qpy3/files/bin/qpython3-android5.sh
+#!/usr/bin/python3.6
 from random import randint
 from os import system
 casa = ['',['','','',''],['','','',''],['','','','']]
@@ -115,9 +115,18 @@ def vencedor():
     if '' != casa[1][3] == casa[2][2] == casa[3][1]:
         return casa[3][1]
 
+def recomecar():
+    for i in range(1,4):
+        for j in range(1,4):
+            casa[i][j] = ''
+
+
 def continuar():
-    msg = input('comecar : 1 => sim / 0 => nao')
-    while msg == '1':
-        main ()
+    msg = int(input('comecar : 1 => sim / 0 => nao'))
+    if msg == 0:
+        exit()
+    while msg:
+        recomecar()
+        main()
         continuar ()
 continuar ()
