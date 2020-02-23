@@ -63,7 +63,7 @@ def jogadaValida(letra, numero):
 
 def tela():
     system('clear')
-    print("{:^20}".format('Jogo da Velha'))
+    print('{:^20}'.format('Jogo da Velha'))
     print('⁼'*32)
     print('|{:^3}|{:^4}|{:^4}|{:^4}|'.format('||', 'A', 'B', 'C'))
     print('='*20)
