@@ -1,4 +1,4 @@
-#!/data/user/0/org.qpython.qpy3/files/bin/qpython3--android5.sh
+#!/usr/bin/python3.6
 from random import randint
 from os import system
 num = [[], [[]], [[]], [[]], [[]]]
